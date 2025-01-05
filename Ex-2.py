@@ -17,9 +17,8 @@ m = (N * sum_ty - sum_t * sum_y) / (N * sum_t2 - sum_t**2)
 
 R_leakage = -1 / (m * C)
 
-print(f"Estimated leakage resistance R_leakage: {R_leakage/1e6} Mega Ohms")
+print(f"Estimated leakage resistance R_leakage: {(R_leakage/1e6):.4f} Mega Ohms")
 
-# Plotting both graphs
 fig, axs = plt.subplots(2, 1, figsize=(8, 10))
 
 # V(t) vs t
